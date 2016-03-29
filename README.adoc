@@ -1,0 +1,16 @@
+= Spacebar
+
+*Spacebar* is a very simple game (simpler than Flappy Bird) and a tutorial
+that I have written--or, to be more precise, that I am writing as an on-going
+process--for my sons.  The purpose of this project is to educate them and
+their friends.  Therefore pretty much everything else aside this notice and
+the license information below is written in Finnish, their mother tongue.
+
+== License
+
+Copyright (C) 2016 Matti Hänninen
+
+This work is licensed under a
+https://creativecommons.org/licenses/by-sa/4.0/[Creative Commons Attribution-ShareAlike 4.0 International License].
+
+image::https://i.creativecommons.org/l/by-sa/4.0/88x31.png[Creative Commons License]
