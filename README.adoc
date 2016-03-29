@@ -1,5 +1,7 @@
 = Spacebar
 
+image:https://travis-ci.org/mjhanninen/spacebar.svg?branch=master["Build Status", link="https://travis-ci.org/mjhanninen/spacebar"]
+
 *Spacebar* is a very simple game (simpler than Flappy Bird) and a tutorial
 that I have written--or, to be more precise, that I am writing as an on-going
 process--for my sons.  The purpose of this project is to educate them and
