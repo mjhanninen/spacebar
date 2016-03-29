@@ -1,4 +1,4 @@
-= Koodataan pieni peli: Spacebar!
+= Spacebar! -- Koodatan pieni peli
 Matti Hänninen <matti@mjhanninen.com>
 v0.1, 2016-01-28
 
