@@ -2,27 +2,7 @@
 Matti Hänninen <matti@mjhanninen.com>
 v0.1, 2016-01-28
 
-
-== Johdanto
-
-Tämän oppaan varrella koodaamme monta versiota pelistä, jolle annamme nimen
-_Spacebar_.
-
-Itse pelin idea on hyvin yksinkertainen: pelaajan pitää odottaa
-malttavaisesti, kunnes avaruuspatukka (eli _Spacebar_) ilmestyy tyhjästä, ja
-painaa sitten välilyöntiä (myös _spacebar_), ennenkuin patukka ehtii kadota.
-
-
-=== Esivalmistelut
-
-Tämä opas olettaa, että käytät _Mac OS X_ -järjestelmäua ja sinulla on
-käytössä seuraavat ohjelmat:
-
-* _Sublime Text_ tekstieditori
-* _Aseprite_ pikselipiirto-ohjelma
-* _Pääte_
-* _Lua_ ohjelmointikieli
-* _Lua LÖVE_ pelikehikko
+include::01_johdanto.adoc[]
 
 
 == Projektin perustaminen
