@@ -1,0 +1,13 @@
+language: ruby
+rmv:
+  - 2.2.0
+install:
+  - gem install asciidoctor
+script:
+  - bin/deploy.sh
+branches:
+  only:
+    - master
+env:
+  global:
+    secure: HOm24HBrmsoQslic2fTUcgJiRubdwrXQ2G8xkXPQnHBfm6akFYT7/giUqSl2SAdV8ltF58T1QrK2UgGNb8k155XkFkEYMCB82JI7oNemxZ//0aEzggO3atVnC/175LSnD7Ad9unh+e46tONT+USOIArMhuRv+ivagB00QjQsWP9TaKQezL1IDJL7PwGM/HenZbM48gjnK968+98nhfpF+B/m0l46YhrJW316rcn1h55oxkuhyiF3+DRBZ7ufIOcJ/zzp201pxvI3SRliU/yn53JktoAFahKK2uny99XYkv/LTai/Ki3Gv1IVhpFt7QEfiOf/1/E4tZGP1kCbY+9Z2GnebgkyI/Q02QTuM0mvy/+nF4aGt6VPiB4QLOH7d0+/bcm1duxHMjvZcB1LdtDApB5CxBBxxI0vY61opG28l4lWxLWYZ3BUSsVVk1jy6fSYJeyDwvMjDYhwf1wAKaaQZxClQGQKZEZgQ+SI8Og0csJk4Ygs5oGukr4hwNdslZ4Ft0Z8M2O5Su9lLcQAvKmna3Z4N6XO1g5ZVKCB469OIBWycgzQJjLe/y9+yycfwdEPmKBK81sbCY2MLToxjgl6I1EH03VL7s3y/Qg7/A3d8STdpjNhyBJ0Xe+FjP1wUSI4fgwDQb22xnZ0G5pF7g7Psp+cTXQNopqLPywq0JiL5fk=
