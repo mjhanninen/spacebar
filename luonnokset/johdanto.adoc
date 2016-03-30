@@ -8,13 +8,7 @@ Itse pelin idea on hyvin yksinkertainen: pelaajan pitää odottaa
 malttavaisesti, kunnes avaruuspatukka (eli _Spacebar_) ilmestyy tyhjästä, ja
 painaa sitten välilyöntiä (myös _spacebar_), ennenkuin patukka ehtii kadota.
 
-=== Esivalmistelut
+=== Kenelle?
 
-Tämä opas olettaa, että käytät _Mac OS X_ -järjestelmää ja sinulla on
-käytössä seuraavat ohjelmat:
-
-* _Sublime Text_ tekstieditori
-* _Aseprite_ pikselipiirto-ohjelma
-* _Pääte_
-* _Lua_ ohjelmointikieli
-* _Lua LÖVE_ pelikehikko
+NOTE: (Kerro: Kenelle tämä opas on tarkoitettu? Mitä pitäisi jo tietää? Mitä
+ei tarvitse tietää?)

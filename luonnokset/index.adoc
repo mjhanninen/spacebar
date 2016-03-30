@@ -2,36 +2,8 @@
 Matti Hänninen <matti@mjhanninen.com>
 v0.1, 2016-01-28
 
-include::01_johdanto.adoc[]
+include::johdanto.adoc[]
 
+include::esivalmistelut.adoc[]
 
-== Projektin perustaminen
-
-
-=== Hakemistorakenteen perustaminen
-
-
-[source,bash]
-----
-$ cd projektit         # <1>
-$ mkdir spacebar       # <2>
-$ cd spacebar          # <3>
-$ mkdir spacebar data  # <4>
-----
-<1> Siirtyy `projektit` hakemistoon.
-<2> Luo `spacebar` hakemiston `projektit` hakemiston sisälle.
-<3> Siirtyy juuri luotuun `spacebar` hakemistoon.
-<4> Luo hakemistot `spacebar` (kyllä, tämä on saman niminen) ja `data`
-    hakemiston `spacebar` sisälle.
-
-
-=== Ensimmäinen versio
-
-Ensimmäinen versio toteuttaa vain pelin toiminnan ytimen.  Tässä vaiheessa ei
-vielä lasketa pisteitä, uutta kierrosta ei voi pelata ja grafiikat ovat perin
-yksinkertaiset.
-
-[source,lua]
-----
-include::001-main.lua[]
-----
+include::projektin_aloittaminen.adoc[]

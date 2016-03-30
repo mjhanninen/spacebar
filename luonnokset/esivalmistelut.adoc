@@ -1,0 +1,57 @@
+[[esivalmistelut]]
+== Esivalmistelut
+
+Tässä luvussa käymme läpi kaikki työkalut, jotka tarvitset pelin
+rakentamiseen.  Tarvitsemasi työkalut ovat:
+
+* pääteohjelma
+* tekstieditori ohjelmien kirjoittamiseen
+* pikselipiirto-ohjelma hahmojen piirtämiseen
+* audio-editori ääniefektien luomiseen
+* sekvensseri musiikin säveltämiseen
+* _Lua_-ohjelmointikieli
+* _Lua LÖVE 2D_ -pelimoottori
+
+Oletan, että sinulla on käytössä Applen tietokone _Mac OS X_
+-käyttöjärjestelmällä.
+
+=== Pääteohjelma
+
+NOTE: (Kirjoita: pääteohjelman käynnistäminen; muutama komento; viite
+Unix-komentojen lunttilappuu; kuvaile lopuksi, mikä pääohjelma on)
+
+=== Tekstieditori
+
+NOTE: (Kirjoita: käy läpi _Sublime Text_ -editori; käy läpi, kuinka _Sublime
+Text_ käynnistetään komentoriviltä; kerro muista vaihtoehdoista, esim. _Atom_,
+_TextMate_, _NotePad++_, ja velhotason editorit)
+
+=== Pikselipiirto-ohjelma
+
+NOTE: (Kirjoita: käy läpi _Aseprite_; kerro muista vaihtoehdoista (mitähän ne
+ovat?  Paint?))
+
+=== Audio-editori
+
+NOTE: (Kirjoita: Käy läpi _Audacityn_ asentaminen; käynnistä _Audacity_;
+nauhoita ääni.)
+
+=== Sekvensseri
+
+NOTE: (Kirjoita: Käy läpi _SunVoxin_ asentaminen; käynnistä _SunVox_; luo pari
+yksinkertaista raitaa; tallenna raidat ja näytä tiedostot päätteeltä.)
+
+=== _Lua_-ohjelmointikieli
+
+NOTE: (Kirjoita: Käy läpi _Lua_-kielen asentaminen; käynnistä _Lua_-tulkki ja
+suorita "Hello, World!".)
+
+http://www.lua.org[Lua Programming Language]
+
+=== _Lua LÖVE 2D_ -pelimoottori ===
+
+NOTE: (Kirjoita: Käy läpi _LÖVE_-pelimoottorin asentaminen; käynnistä _LÖVE_
+ikkunoista; käynnistä _LÖVE_ päätteeltä; kerro, että _LÖVE_ sisältää oman
+version Luasta.)
+
+https://love2d.org[Lua LÖVE 2D]
