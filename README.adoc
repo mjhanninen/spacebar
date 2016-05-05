@@ -1,3 +1,5 @@
+:hide-uri-scheme:
+
 = Spacebar
 
 image:https://travis-ci.org/mjhanninen/spacebar.svg?branch=master["Build Status", link="https://travis-ci.org/mjhanninen/spacebar"]
@@ -7,6 +9,8 @@ that I have written--or, to be more precise, that I am writing as an on-going
 process--for my sons.  The purpose of this project is to educate them and
 their friends.  Therefore pretty much everything else aside this notice and
 the license information below is written in Finnish, their mother tongue.
+
+The actual tutorial is available at https://mjhanninen.github.io/spacebar/.
 
 == License
 
