@@ -3,26 +3,32 @@
 
 === Hakemistorakenteen perustaminen
 
+video::lHAe5rdjQ2M[youtube,640,360]
+
 [source,bash]
 ----
-$ cd projektit         # <1>
-$ mkdir spacebar       # <2>
-$ cd spacebar          # <3>
-$ mkdir spacebar data  # <4>
+$ cd koodi            # <1>
+$ mkdir spacebar      # <2>
+$ cd spacebar         # <3>
+$ mkdir spacebar data # <4>
 ----
-<1> Siirtyy `projektit` hakemistoon.
-<2> Luo `spacebar` hakemiston `projektit` hakemiston sisälle.
+<1> Siirtyy `koodi` hakemistoon.
+<2> Luo `spacebar` hakemiston `koodi` hakemiston sisälle.
 <3> Siirtyy juuri luotuun `spacebar` hakemistoon.
 <4> Luo hakemistot `spacebar` (kyllä, tämä on saman niminen) ja `data`
     hakemiston `spacebar` sisälle.
 
 === Ensimmäinen versio
 
-Ensimmäinen versio toteuttaa vain pelin toiminnan ytimen.  Tässä vaiheessa ei
-vielä lasketa pisteitä, uutta kierrosta ei voi pelata ja grafiikat ovat perin
-yksinkertaiset.
+Peliohjelman ensimmäinen version on todella yksinkertainen: peli piirtää
+ruudulle vain oranssin värisen patukan ja odottaa, että pelaaja painaa
+*esc*-näppäintä.  Seuraava video kuvaa ohjelman kirjoittamisen ja testauksen:
+
+video::xYqk7AV3XLM[youtube,640,360]
+
+Pelin ohjelmakoodi on nyt tämä:
 
 [source,lua]
 ----
-include::001-main.lua[]
+include::../koodi/versio_01/main.lua[]
 ----
