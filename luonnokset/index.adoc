@@ -1,6 +1,6 @@
 = Spacebar! -- Koodatan pieni peli
 Matti Hänninen <matti@mjhanninen.com>
-v0.1, 2016-01-28
+v0.1, 2016-05-05
 
 :icons: font
 
