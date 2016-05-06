@@ -18,17 +18,124 @@ $ mkdir spacebar data # <4>
 <4> Luo hakemistot `spacebar` (kyllä, tämä on saman niminen) ja `data`
     hakemiston `spacebar` sisälle.
 
+
 === Ensimmäinen versio
 
-Peliohjelman ensimmäinen version on todella yksinkertainen: peli piirtää
-ruudulle vain oranssin värisen patukan ja odottaa, että pelaaja painaa
-*esc*-näppäintä.  Seuraava video kuvaa ohjelman kirjoittamisen ja testauksen:
+Peliohjelman ensimmäinen versio on todella yksinkertainen: peli piirtää
+ruudulle oranssin värisen patukan ja jää odottamaan, että pelaaja painaa
+*esc*-näppäintä.  Kun pelaaja painaa *esc*-näppäintä, peli lopettaa itsensä.
+Vaikka peliohjelma on yksikertainen, se silti pitää sisällään LÖVE 2D -pelin
+keskeiset osaset.  Nämä ovat:
+
+- Pelin alustus `love.load()` funktiolla
+
+- Pelisilmukka, joka muodostuu `love.update(dt)` ja `love.draw()` funktioista
+
+- Käyttäjän antaman syötteen käsittely `love.keypressed(nappain)` funktiolla
+
+Seuraava video kuvaa ohjelman ensimmäisen version kirjoittamisen ja
+testauksen.  Voit katsoa sen ensin ja lukea sitten seuraavat kohdat.
 
 video::xYqk7AV3XLM[youtube,640,360]
 
-Pelin ohjelmakoodi on nyt tämä:
+
+==== Luo tiedosto main.lua
+
+
+LÖVE 2D -pelillä on oltava pääohjelma, joka on tallennettu ohjelmatiedostojen
+kansioon nimellä `main.lua`.  Käynnistyessään LÖVE 2D -pelimoottori etsii
+pelin hakemistosta tämän nimistä pääohjelmaa.  Jos pääohjelma löytyy, niin
+pelimoottori ryhtyy suorittamaan sen sisältämiä komentoja.  Jos taas tiedostoa
+ei löydy, niin pelimoottori ei käynnistä peliä, vaan sen sijaan näyttää oman
+tervehdysikkunansa.
+
+Aloita peliohjelma luomalla tekstieditorillasi uusi tiedosto `main.lua`
+hakemistoon `koodi/spacebar/spacebar`.  Jos käytät *Sublime Text* -editoria,
+voit toimia seuraavasti:
+
+1. Käynnistä *Sublime Text*.
+
+2. Jos editori ei näytä heti valmiiksi uutta tyhjää tekstitiedostoa (jonka
+   voit tunnistaa nimestä `untitled`), niin luo sellainen valitsemalla
+   valikosta *File* -> *New File*.
+
+3. Aloita tiedoston tallentaminen valitsemalla valikosta *File* -> *Save
+   As...*, jolloin tekstieditori avaa tallennusikkunan.
+
+4. Siirry tallennusikkunalla hakemistoon `koodi/spacebar/spacebar`.
+
+5. Kirjoita tekstikenttään *Save As:* tiedoston nimi `main.lua`.
+
+6. Tallenna tiedosto painamalla *Save* nappia.  Tiedosto on nyt tallennettu.
+
+
+==== Pelin alustus
+
+Kirjoita tiedoston alkuun seuraava funktio:
 
 [source,lua]
+----
+function love.load()
+    love.window.setMode(640, 480) <1>
+end
+----
+
+
+==== Pelisilmukka
+
+Pelisilmukka muodostuu funktioista `love.update(dt)` ja `love.draw()`.  Näistä
+ensimmäisen tehtävä on seurata ja kehittää pelin tilannetta ja jälkimmäisen
+tehtävä on piirtää ruudulle, miltä pelin tilanne näyttää.
+
+Pelimme ensimmäisessä versiossa ei ole mitään tilaa, joten funktio
+`love.update(dt)` ei tee mitään:
+
+[source,lua]
+----
+function love.update(dt)
+    -- Älä tee mitään toistaiseksi
+end
+----
+
+
+
+[source,lua]
+----
+function love.draw()
+    love.graphics.clear(25, 75, 230)                     -- <1>
+    love.graphics.setColor(255, 115, 25)                 -- <2>
+    love.graphics.rectangle("fill", 120, 190, 400, 100)  -- <3>
+end
+----
+<1> Funktion `love.graphics.clear` kutsu tyhjentää ruudun.  Sana "clear"
+    tarkoittaa "tyhjennä" tai "puhdista".  Argumentit `25`, `75` ja `230`
+    määräävät värin (25, 75, 230) eli sinisen, jolla ruutu maalataan tyhjäksi.
+<2> Funktion `love.graphics.setColor` kutsu vaihtaa piirtoväriksi värin (255,
+    115, 25), joka on oranssi.  Tästä eteenpäin kaikki piirtokomennot
+    käyttävät oranssia, kunnes piirtoväri vaihdetaan taas kutsumalla funktiota
+    `love.graphics.setColor` uudestaan.
+<3> Piirrä kohtaan (120, 190) täytetty suorakulmio, jonka leveys on 400
+    pikseliä ja korkeus 100 pikseliä.
+
+
+==== Esc-nappaimen tunnistus
+
+[source,lua]
+----
+function love.keypressed(nappain)
+    if nappain == "escape" then
+        love.event.quit()
+    end
+end
+----
+
+
+==== Valmis ensimmäinen versio
+
+Peliohjelman valmis ensimmäinen versio näyttää tältä:
+
+[source,lua]
+.main.lua
 ----
 include::../koodi/versio_01/main.lua[]
 ----
